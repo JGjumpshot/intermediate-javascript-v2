@@ -24,7 +24,7 @@ describe('async', function() {
     expect(async().then).toEqual(jasmine.any(Function))
   })
 
-  it('should change foo after promise', function(done) {
+  it('should change changed after promise', function(done) {
     changed = false;
     async().then(function(res) {
       expect(changed).toEqual(true);
